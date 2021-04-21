@@ -15,7 +15,7 @@
     },
     "variable_entry": {
         "clt": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "cloud_area_fraction",
             "units": "%",
@@ -31,7 +31,7 @@
             "valid_max": ""
         },
         "ps": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "surface_air_pressure",
             "units": "Pa",
@@ -101,7 +101,7 @@
             "ok_max_mean_abs": ""
         }, 
         "mrso": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "land", 
             "standard_name": "mass_content_of_water_in_soil", 
             "units": "kg m-2", 
@@ -138,7 +138,7 @@
         },
     
         "rlut": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "toa_outgoing_longwave_flux",
             "units": "W m-2",
@@ -154,7 +154,7 @@
             "valid_max": ""
         },
        "siconca": {
-            "frequency": "mon",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "sea_ice_area_fraction",
             "units": "%",
@@ -170,7 +170,7 @@
             "valid_max": "100.0 r"
         },
         "sisnthick": {
-            "frequency": "day", 
+            "frequency": "6hrPt", 
             "modeling_realm": "seaIce", 
             "standard_name": "surface_snow_thickness", 
             "units": "m", 
@@ -188,7 +188,7 @@
             "ok_max_mean_abs": ""
         }, 
         "pr": {
-            "frequency": "mon",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "precipitation_flux",
             "units": "kg m-2 s-1",
@@ -204,7 +204,7 @@
             "valid_max": ""
         },
         "prc": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "convective_precipitation_flux", 
             "units": "kg m-2 s-1", 
@@ -222,7 +222,7 @@
             "ok_max_mean_abs": ""
         }, 
         "snd": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "surface_snow_thickness",
             "units": "m",
@@ -238,7 +238,7 @@
             "valid_max": ""
         },
         "snw": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "surface_snow_amount",
             "units": "kg m-2",
@@ -254,7 +254,7 @@
             "valid_max": ""
         },
         "tas": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "air_temperature",
             "units": "K",
@@ -270,7 +270,7 @@
             "valid_max": ""
         },
         "tasmin": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "air_temperature",
             "units": "K",
@@ -286,7 +286,7 @@
             "valid_max": ""
         },
         "tasmax": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "air_temperature",
             "units": "K",
@@ -302,7 +302,7 @@
             "valid_max": ""
         }
           "tos": {
-            "frequency": "day", 
+            "frequency": "6hrPt", 
             "modeling_realm": "ocean", 
             "standard_name": "sea_surface_temperature", 
             "units": "degC", 
@@ -320,7 +320,7 @@
             "ok_max_mean_abs": ""
         },     
         "tauu": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downward_eastward_stress", 
             "units": "Pa", 
@@ -338,7 +338,7 @@
             "ok_max_mean_abs": ""
         }, 
         "tauv": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "surface_downward_northward_stress", 
             "units": "Pa", 
