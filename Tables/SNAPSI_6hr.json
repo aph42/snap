@@ -14,6 +14,22 @@
         "Conventions": "CF-1.7"
     },
     "variable_entry": {
+        "clt": {
+            "frequency": "dayPt",
+            "modeling_realm": "atmos",
+            "standard_name": "cloud_area_fraction",
+            "units": "%",
+            "cell_methods": "area: mean time: point",
+            "cell_measures": "area: areacella",
+            "long_name": "Total Cloud Cover Percentage",
+            "comment": "Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.",
+            "dimensions": "longitude latitude time1",
+            "out_name": "clt",
+            "type": "real",
+            "positive": "",
+            "valid_min": "",
+            "valid_max": ""
+        },
         "ps": {
             "frequency": "dayPt",
             "modeling_realm": "atmos",
@@ -84,6 +100,43 @@
             "ok_min_mean_abs": "", 
             "ok_max_mean_abs": ""
         }, 
+        "mrso": {
+            "frequency": "mon", 
+            "modeling_realm": "land", 
+            "standard_name": "mass_content_of_water_in_soil", 
+            "units": "kg m-2", 
+            "cell_methods": "area: mean where land time: mean", 
+            "cell_measures": "area: areacella", 
+            "long_name": "Total Soil Moisture Content", 
+            "comment": "the mass per unit area  (summed over all soil layers) of water in all phases.", 
+            "dimensions": "longitude latitude time", 
+            "out_name": "mrso", 
+            "type": "real", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": ""
+        }, 
+        "mrsos": {
+            "frequency": "6hrPt", 
+            "modeling_realm": "land", 
+            "standard_name": "mass_content_of_water_in_soil_layer", 
+            "units": "kg m-2", 
+            "cell_methods": "area: mean where land time: point", 
+            "cell_measures": "area: areacella", 
+            "long_name": "Moisture in Upper Portion of Soil Column", 
+            "comment": "The mass of water in all phases in the upper 10cm of the  soil layer.", 
+            "dimensions": "longitude latitude time1 sdepth1", 
+            "out_name": "mrsos", 
+            "type": "real", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": ""
+        },
+    
         "rlut": {
             "frequency": "dayPt",
             "modeling_realm": "atmos",
@@ -116,6 +169,24 @@
             "valid_min": "0.0 r",
             "valid_max": "100.0 r"
         },
+        "sisnthick": {
+            "frequency": "day", 
+            "modeling_realm": "seaIce", 
+            "standard_name": "surface_snow_thickness", 
+            "units": "m", 
+            "cell_methods": "area: mean where snow over sea_ice area: time: mean where sea_ice", 
+            "cell_measures": "area: areacello", 
+            "long_name": "Snow Thickness", 
+            "comment": "Actual thickness of snow (snow volume divided by snow-covered area)", 
+            "dimensions": "longitude latitude time", 
+            "out_name": "sisnthick", 
+            "type": "real", 
+            "positive": "", 
+            "valid_min": "", 
+            "valid_max": "", 
+            "ok_min_mean_abs": "", 
+            "ok_max_mean_abs": ""
+        }, 
         "pr": {
             "frequency": "mon",
             "modeling_realm": "atmos",
@@ -150,22 +221,6 @@
             "ok_min_mean_abs": "", 
             "ok_max_mean_abs": ""
         }, 
-        "clt": {
-            "frequency": "dayPt",
-            "modeling_realm": "atmos",
-            "standard_name": "cloud_area_fraction",
-            "units": "%",
-            "cell_methods": "area: mean time: point",
-            "cell_measures": "area: areacella",
-            "long_name": "Total Cloud Cover Percentage",
-            "comment": "Total cloud area fraction (reported as a percentage) for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.",
-            "dimensions": "longitude latitude time1",
-            "out_name": "clt",
-            "type": "real",
-            "positive": "",
-            "valid_min": "",
-            "valid_max": ""
-        },
         "snd": {
             "frequency": "dayPt",
             "modeling_realm": "atmos",
@@ -246,26 +301,24 @@
             "valid_min": "",
             "valid_max": ""
         }
-        
-        "mrsos": {
-            "frequency": "6hrPt", 
-            "modeling_realm": "land", 
-            "standard_name": "mass_content_of_water_in_soil_layer", 
-            "units": "kg m-2", 
-            "cell_methods": "area: mean where land time: point", 
-            "cell_measures": "area: areacella", 
-            "long_name": "Moisture in Upper Portion of Soil Column", 
-            "comment": "The mass of water in all phases in the upper 10cm of the  soil layer.", 
-            "dimensions": "longitude latitude time1 sdepth1", 
-            "out_name": "mrsos", 
+          "tos": {
+            "frequency": "day", 
+            "modeling_realm": "ocean", 
+            "standard_name": "sea_surface_temperature", 
+            "units": "degC", 
+            "cell_methods": "area: mean where sea time: mean", 
+            "cell_measures": "area: areacello", 
+            "long_name": "Sea Surface Temperature", 
+            "comment": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.", 
+            "dimensions": "longitude latitude time", 
+            "out_name": "tos", 
             "type": "real", 
             "positive": "", 
             "valid_min": "", 
             "valid_max": "", 
             "ok_min_mean_abs": "", 
             "ok_max_mean_abs": ""
-        },
-    
+        },     
         "tauu": {
             "frequency": "mon", 
             "modeling_realm": "atmos", 
