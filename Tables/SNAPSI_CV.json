@@ -96,6 +96,27 @@
                 "source_id": "IFS",
                 "source": "IFS (description)"
             }   
+            "GloSea5-GC2": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "KMA",
+                "source_id": "GloSea5-GC2",
+                "source": "GloSea5-GC2 (description)"
+            }
+            "CNRM-CM 6.1": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "Meteo-France",
+                "source_id": "CNRM-CM 6.1",
+                "source": "CNRM-CM 6.1 (description)"
+            }
+            "SPEAR": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "NOAA-GFDL",
+                "source_id": "SPEAR",
+                "source": "SPEAR (description)"
+            }
             "CESM2-CAM6": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
@@ -103,7 +124,21 @@
                 "source_id": "CESM2-CAM6",
                 "source": "CESM2-CAM6 (description)"
             }
-        
+            "NAVGEM": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "NRL",
+                "source_id": "NAVGEM",
+                "source": "NAVGEM (description)"
+            }        
+
+            "GloSea5": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "UKMO",
+                "source_id": "GloSea5",
+                "source": "GloSea5 (description)"
+            }
         },
         "source_type": {
             "AER": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
