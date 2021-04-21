@@ -224,6 +224,54 @@
             "valid_min": "",
             "valid_max": ""
         },
-        
+        "tntrl": {
+            "frequency": "mon",
+            "modeling_realm": "atmos",
+            "standard_name": "tendency_of_air_temperature_due_to_longwave_heating",
+            "units": "K s-1",
+            "cell_methods": "area: time: mean",
+            "cell_measures": "area: areacella",
+            "long_name": "Tendency of Air Temperature Due to Longwave Radiative Heating",
+            "comment": "Tendency of air temperature due to longwave radiative heating",
+            "dimensions": "longitude latitude alevel time",
+            "out_name": "tntrl",
+            "type": "real",
+            "positive": "",
+            "valid_min": "",
+            "valid_max": ""
+        },
+        "tntrs": {
+            "frequency": "mon",
+            "modeling_realm": "atmos",
+            "standard_name": "tendency_of_air_temperature_due_to_shortwave_heating",
+            "units": "K s-1",
+            "cell_methods": "area: time: mean",
+            "cell_measures": "area: areacella",
+            "long_name": "Tendency of Air Temperature Due to Shortwave Radiative Heating",
+            "comment": "Tendency of air temperature due to shortwave radiative heating",
+            "dimensions": "longitude latitude alevel time",
+            "out_name": "tntrs",
+            "type": "real",
+            "positive": "",
+            "valid_min": "",
+            "valid_max": ""
+        },
+        "cl": {
+            "frequency": "10dayPt",
+            "modeling_realm": "atmos",
+            "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+            "units": "%",
+            "cell_methods": "area: mean time: point",
+            "cell_measures": "area: areacella",
+            "long_name": "Percentage Cloud Cover",
+            "comment": "Percentage cloud cover, including both large-scale and convective cloud.",
+            "dimensions": "longitude latitude alevel time1",
+            "out_name": "cl",
+            "type": "real",
+            "positive": "",
+            "valid_min": "",
+            "valid_max": ""
+        },
+
     }
 }
