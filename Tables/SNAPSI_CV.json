@@ -54,13 +54,48 @@
             "UKMO": "Met Office, Exeter, UK",
         },
         "source_id": {
-            "CESM2-CAM6": {
+            "ACCESS-S": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
-                "institution_id": "NCAR",
-                "source_id": "CESM2-CAM6",
-                "source": "CESM2-CAM6 (description)"
+                "institution_id": "BoM",
+                "source_id": "ACCESS-S",
+                "source": "ACCESS-S (description)"
             }
+            "BCC-CSM2-HR": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "BCC-CMA",
+                "source_id": "BCC-CSM2-HR",
+                "source": "BCC-CSM2-HR (description)"
+            }
+            "GLOBO": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "CNR-ISAC",
+                "source_id": "GLOBO",
+                "source": "GLOBO (description)"
+            }
+            "CanESM5": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "ECCC",
+                "source_id": "CanESM5",
+                "source": "CanESM5 (description)"
+            }   
+            "GEM-NEMO": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "ECCC",
+                "source_id": "GEM-NEMO",
+                "source": "GEM-NEMO (description)"
+            }   
+            "IFS": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "ECMWF",
+                "source_id": "IFS",
+                "source": "IFS (description)"
+            }   
             "CESM2-CAM6": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
