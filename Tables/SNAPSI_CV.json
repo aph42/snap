@@ -41,17 +41,34 @@
             "SNAPSI": "Stratospheric Nudging And Predictable Surface Impacts: coordinated nudging experiments to isolate the influence of the stratosphere on sub-seasonal predictability"
         },
         "institution_id": {
-            "CCCma": "Canadian Centre for Climate Modelling and Analysis, Environment and Climate Change Canada, Victoria, BC V8P 5C2, Canada",
+            "BoM": "Bureau of Meteorology, Melbourne, Victoria, Australia",
+            "BCC-CMA": "Beijing Climate Center of China Meteorological Administration",
+            "CNR-ISAC": "Institute of Atmospheric Sciences and Climate, Bologna, Italy",
+            "ECCC": "Environment and Climate Change Canada",
+            "ECMWF": "European Centre for Medium-Range Weather Forecasts, Shinfield Park, Reading, United Kingdom",
+            "KMA": "Korea Meteorological Administration",
+            "Meteo-France": "Meteo France",
+            "NOAA-GFDL": "National Oceanic and Atmospheric Administration- Geophysical Fluid Dynamics Laboratory, Princeton, NJ, USA",
             "NCAR": "National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA",
+            "NRL": "Naval Research Laboratory, Washington DC, USA",
+            "UKMO": "Met Office, Exeter, UK",
         },
         "source_id": {
-            "CESM2-WACCM": {
+            "CESM2-CAM6": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
                 "institution_id": "NCAR",
-                "source_id": "CESM2-WACCM",
-                "source": "CESM2-WACCM (description)"
+                "source_id": "CESM2-CAM6",
+                "source": "CESM2-CAM6 (description)"
             }
+            "CESM2-CAM6": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "NCAR",
+                "source_id": "CESM2-CAM6",
+                "source": "CESM2-CAM6 (description)"
+            }
+        
         },
         "source_type": {
             "AER": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
