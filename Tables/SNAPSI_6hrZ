@@ -15,7 +15,7 @@
     },
     "variable_entry": {
         "ta": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "air_temperature",
             "units": "K",
@@ -82,7 +82,7 @@
         },
 
         "wap": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "lagrangian_tendency_of_air_pressure", 
             "units": "Pa s-1", 
@@ -116,7 +116,7 @@
             "valid_max": ""
         }
         "o3": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "mole_fraction_of_ozone_in_air",
             "units": "mol mol-1",
@@ -149,7 +149,7 @@
             "valid_max": ""
         },
         "epfy": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "northward_eliassen_palm_flux_in_air",
             "units": "m3 s-2",
@@ -181,7 +181,7 @@
             "valid_max": ""
         },
          "vtem": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "northward_transformed_eulerian_mean_air_velocity",
             "units": "m s-1",
@@ -197,7 +197,7 @@
             "valid_max": ""
         },
         "wtem": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "upward_transformed_eulerian_mean_air_velocity",
             "units": "m s-1",
@@ -230,7 +230,7 @@
         },
         
         "utendvtem": {
-            "frequency": "day", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_eastward_wind_due_to_advection_by_northward_transformed_eulerian_mean_air_velocity", 
             "units": "m s-1 d-1", 
@@ -238,7 +238,7 @@
             "cell_measures": "", 
             "long_name": "Tendency of Eastward Wind Due to TEM Northward Advection and Coriolis Term", 
             "comment": "Tendency of zonally averaged eastward wind, by the residual northward wind advection (on the native model grid). Reference: Andrews et al (1987): Middle Atmospheric Dynamics. Academic Press.", 
-            "dimensions": "latitude plev39 time", 
+            "dimensions": "latitude snap34 time", 
             "out_name": "utendvtem", 
             "type": "real", 
             "positive": "", 
@@ -256,7 +256,7 @@
             "cell_measures": "area: areacella", 
             "long_name": "Tendency of Eastward Wind from Numerical Artefacts", 
             "comment": "Other sub-grid scale/numerical zonal drag excluding that already provided for the parameterized orographic and non-orographic gravity waves. This would be used to calculate the total 'diabatic drag'. Contributions to this additional drag such Rayleigh friction and diffusion that can be calculated from the monthly mean wind fields should not be included, but details (e.g. coefficients) of the friction and/or diffusion used in the model should be provided separately.", 
-            "dimensions": "longitude latitude plev19 time", 
+            "dimensions": "longitude latitude snap34 time", 
             "out_name": "diabdrag", 
             "type": "real", 
             "positive": "", 
@@ -266,7 +266,7 @@
             "ok_max_mean_abs": ""
         },
         "utendwtem": {
-            "frequency": "day", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_eastward_wind_due_to_advection_by_upward_transformed_eulerian_mean_air_velocity", 
             "units": "m s-1 d-1", 
@@ -274,7 +274,7 @@
             "cell_measures": "", 
             "long_name": "Tendency of Eastward Wind Due to TEM Upward Advection", 
             "comment": "Tendency of zonally averaged eastward wind, by the residual upward wind advection (on the native model grid). Reference: Andrews et al (1987): Middle Atmospheric Dynamics. Academic Press.", 
-            "dimensions": "latitude plev39 time", 
+            "dimensions": "latitude snap34 time", 
             "out_name": "utendwtem", 
             "type": "real", 
             "positive": "", 
@@ -300,7 +300,7 @@
             "valid_max": ""
         },
         "utendnogw": {
-            "frequency": "dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag",
             "units": "m s-2",
@@ -324,7 +324,7 @@
             "cell_measures": "area: areacella", 
             "long_name": "Northward Acceleration Due to Non-Orographic Gravity Wave Drag", 
             "comment": "Tendency of the northward wind by parameterized nonorographic gravity waves.  (Note that CF name tables only have a general northward tendency for all gravity waves, and we need it separated by type.)", 
-            "dimensions": "longitude latitude plev19 time", 
+            "dimensions": "longitude latitude snap34 time", 
             "out_name": "vtendnogw", 
             "type": "real", 
             "positive": "", 
@@ -334,7 +334,7 @@
             "ok_max_mean_abs": ""
         }, 
         "vtendogw": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_northward_wind_due_to_orographic_gravity_wave_drag", 
             "units": "m s-2", 
@@ -342,7 +342,7 @@
             "cell_measures": "area: areacella", 
             "long_name": "Northward Acceleration Due to Orographic Gravity Wave Drag", 
             "comment": "Tendency of the northward wind by parameterized orographic gravity waves.  (Note that CF name tables only have a general northward tendency for all gravity waves, and we need it separated by type.)", 
-            "dimensions": "longitude latitude plev19 time", 
+            "dimensions": "longitude latitude snap34 time", 
             "out_name": "vtendogw", 
             "type": "real", 
             "positive": "", 
@@ -360,7 +360,7 @@
             "cell_measures": "", 
             "long_name": "Eastward Gravity Wave Drag", 
             "comment": "Parameterised x-component of gravity wave drag", 
-            "dimensions": "latitude plev39 time", 
+            "dimensions": "latitude snap34 time", 
             "out_name": "xgwdparam", 
             "type": "real", 
             "positive": "", 
@@ -370,7 +370,7 @@
             "ok_max_mean_abs": ""
         }, 
         "ygwdparam": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "atmosphere_northward_stress_due_to_gravity_wave_drag", 
             "units": "Pa", 
@@ -378,7 +378,7 @@
             "cell_measures": "", 
             "long_name": "Northward Gravity Wave Drag", 
             "comment": "Parameterised y- component of gravity wave drag", 
-            "dimensions": "latitude plev39 time", 
+            "dimensions": "latitude snap34 time", 
             "out_name": "ygwdparam", 
             "type": "real", 
             "positive": "", 
@@ -397,7 +397,7 @@
             "cell_measures": "area: areacella", 
             "long_name": "Tendency of Air Temperature Due to Model Physics", 
             "comment": "Tendency of air temperature due to model physics. This includes sources and sinks from parametrized physics (e.g. radiation, convection, boundary layer, stratiform condensation/evaporation, etc.). It excludes sources and sinks from resolved dynamics and numerical diffusion not associated with parametrized physics.  For example, any vertical diffusion which is part of the boundary layer mixing scheme should be included, while numerical diffusion applied in addition to physics or resolved dynamics should be excluded.  This term is required to check the closure of the heat budget.", 
-            "dimensions": "longitude latitude alevel time", 
+            "dimensions": "longitude latitude snap34 time", 
             "out_name": "tntmp", 
             "type": "real", 
             "positive": "", 
@@ -407,7 +407,7 @@
             "ok_max_mean_abs": ""
         },
         "tntc": {
-            "frequency": "mon", 
+            "frequency": "6hrPt", 
             "modeling_realm": "atmos", 
             "standard_name": "tendency_of_air_temperature_due_to_convection", 
             "units": "K s-1", 
@@ -415,7 +415,7 @@
             "cell_measures": "", 
             "long_name": "Tendency of Air Temperature Due to Convection", 
             "comment": "Tendencies from cumulus convection scheme.", 
-            "dimensions": "latitude plev39 time", 
+            "dimensions": "latitude snap34 time", 
             "out_name": "tntc", 
             "type": "real", 
             "positive": "", 
@@ -425,7 +425,7 @@
             "ok_max_mean_abs": ""
         } 
         "tntrl": {
-            "frequency": "mon",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "tendency_of_air_temperature_due_to_longwave_heating",
             "units": "K s-1",
@@ -433,7 +433,7 @@
             "cell_measures": "area: areacella",
             "long_name": "Tendency of Air Temperature Due to Longwave Radiative Heating",
             "comment": "Tendency of air temperature due to longwave radiative heating",
-            "dimensions": "longitude latitude alevel time",
+            "dimensions": "latitude snap34 time",
             "out_name": "tntrl",
             "type": "real",
             "positive": "",
@@ -441,7 +441,7 @@
             "valid_max": ""
         },
         "tntrs": {
-            "frequency": "mon",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "tendency_of_air_temperature_due_to_shortwave_heating",
             "units": "K s-1",
@@ -449,7 +449,7 @@
             "cell_measures": "area: areacella",
             "long_name": "Tendency of Air Temperature Due to Shortwave Radiative Heating",
             "comment": "Tendency of air temperature due to shortwave radiative heating",
-            "dimensions": "longitude latitude alevel time",
+            "dimensions": "latitude snap34 time",
             "out_name": "tntrs",
             "type": "real",
             "positive": "",
@@ -457,7 +457,7 @@
             "valid_max": ""
         },
         "cl": {
-            "frequency": "10dayPt",
+            "frequency": "6hrPt",
             "modeling_realm": "atmos",
             "standard_name": "cloud_area_fraction_in_atmosphere_layer",
             "units": "%",
@@ -465,7 +465,7 @@
             "cell_measures": "area: areacella",
             "long_name": "Percentage Cloud Cover",
             "comment": "Percentage cloud cover, including both large-scale and convective cloud.",
-            "dimensions": "longitude latitude alevel time1",
+            "dimensions": "longitude latitude snap34 time1",
             "out_name": "cl",
             "type": "real",
             "positive": "",
