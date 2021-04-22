@@ -193,9 +193,9 @@
         },
         "table_id": [
             "6hr",
-            "E6hr",
+            "6hrPt",
             "6hrZ",
-            "E6hrZ",
+            "6hrZPt",
             "fx"
         ],
         "license": [
@@ -205,12 +205,12 @@
             "CMIP6"
         ],
         "sub_experiment_id": {
-            "2018-01-25": "Forecasts initialized on or near 2018-01-25",
-            "2018-02-08": "Forecasts initialized on or near 2018-02-08",
-            "2018-12-13": "Forecasts initialized on or near 2018-12-13",
-            "2019-01-08": "Forecasts initialized on or near 2019-01-08",
-            "2019-08-29": "Forecasts initialized on or near 2019-08-29",
-            "2019-10-01": "Forecasts initialized on or near 2019-10-01"
+            "s20180125": "Forecasts initialized on or near 2018-01-25",
+            "s20180208": "Forecasts initialized on or near 2018-02-08",
+            "s20181213": "Forecasts initialized on or near 2018-12-13",
+            "s20190108": "Forecasts initialized on or near 2019-01-08",
+            "s20190829": "Forecasts initialized on or near 2019-08-29",
+            "s20191001": "Forecasts initialized on or near 2019-10-01"
         },
         "experiment_id": {
             "free": {
@@ -219,7 +219,7 @@
                 "experiment_id": "free",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "2018-01-25", "2018-02-08", "2018-12-13", "2019-01-08", "2019-08-29", "2019-10-01"
+                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
                 ]
             },
             "control": {
@@ -228,7 +228,7 @@
                 "experiment_id": "control",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "2018-01-25", "2018-02-08", "2018-12-13", "2019-01-08", "2019-08-29", "2019-10-01"
+                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
                 ]
             },
             "nudged": {
@@ -237,7 +237,7 @@
                 "experiment_id": "nudged",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "2018-01-25", "2018-02-08", "2018-12-13", "2019-01-08", "2019-08-29", "2019-10-01"
+                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
                 ]
             },
             "nudged-full": {
@@ -246,7 +246,7 @@
                 "experiment_id": "nudged-full",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "2018-01-25", "2018-02-08", "2018-12-13", "2019-01-08", "2019-08-29", "2019-10-01"
+                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
                 ]
             }
         },
@@ -266,7 +266,7 @@
             "^[[:digit:]]\\{2,2\\}\\.[[:digit:]]\\{2,2\\}\\.[[:digit:]]\\{2,2\\}$"
         ],
         "Conventions": [
-            "CF-1.7"
+            "CF-1.8 SNAP"
         ],
         "forcing_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
