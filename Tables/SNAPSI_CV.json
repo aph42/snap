@@ -153,9 +153,10 @@
             "SLAB": "slab-ocean used with an AGCM in representing the atmosphere-ocean coupled system"
         },
         "frequency": {
-            "6hr":"sampled every 6 hours",
-            "6hrPt":"sampled 6 hourly, at specified time point within the time period",
-            "fx":"fixed (time invariant) field"
+            "6hr": "6 hourly output, averaged over interval",
+            "6hrPt": "6 hourly output, at specified time point within the time period",
+            "6hrZ": "6 hourly zonal mean output, averaged over interval",
+            "6hrPtZ": "6 hourly zonal mean output, at specified time point within the time period"
         },
         "grid_label": {
             "gm": "global mean data",
@@ -195,8 +196,7 @@
             "6hr",
             "6hrPt",
             "6hrZ",
-            "6hrZPt",
-            "fx"
+            "6hrPtZ"
         ],
         "license": [
             "^SNAPSI model data produced by .* is licensed under a Creative Commons Attribution.*ShareAlike 4.0 International License .https://creativecommons.org/licenses.* *Consult _ for terms of use governing SNAPSI output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
