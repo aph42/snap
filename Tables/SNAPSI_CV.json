@@ -276,6 +276,9 @@
         ],
         "physics_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
+        ],
+        "filename_template": [
+            "<variable_id>_<table_id>_<source_id>_<experiment_id >_<subexperiment_id>-<variant_label>_<grid_label>[_<time_range>].nc"
         ]
     }
 }
