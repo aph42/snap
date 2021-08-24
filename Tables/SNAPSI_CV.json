@@ -6,26 +6,18 @@
             "contact",
             "creation_date",
             "data_specs_version",
-            "experiment",
             "experiment_id",
             "forcing_index",
             "frequency",
-            "grid",
             "grid_label",
             "initialization_index",
-            "institution",
             "institution_id",
             "license",
             "mip_era",
-            "nominal_resolution",
             "physics_index",
-            "product",
             "realization_index",
             "realm",
-            "source",
             "source_id",
-            "source_type",
-            "sub_experiment",
             "sub_experiment_id",
             "table_id",
             "tracking_id",
@@ -33,8 +25,8 @@
             "variant_label"
         ],
         "version_metadata": {
-            "CV_collection_modified": "April 16, 2021, 15:49:57 UTC",
-            "CV_collection_version": "0.9.0",
+            "CV_collection_modified": "August 23, 2021",
+            "CV_collection_version": "0.9.1",
             "author": "Peter Hitchcock <aph28@cornell.edu>"
         },
         "activity_id": {
@@ -51,9 +43,17 @@
             "NOAA-GFDL": "National Oceanic and Atmospheric Administration- Geophysical Fluid Dynamics Laboratory, Princeton, NJ, USA",
             "NCAR": "National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA",
             "NRL": "Naval Research Laboratory, Washington DC, USA",
-            "UKMO": "Met Office, Exeter, UK"
+            "UKMO": "Met Office, Exeter, UK",
+            "SNAP": "Stratospheric Network for the Assessment of Predictability"
         },
         "source_id": {
+            "SNAPSI-REF": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "SNAP",
+                "source_id": "SNAPSI-REF",
+                "source": "Place-holder model used to include ERA5 reference states used by nudged forecast ensembles."
+            },
             "ACCESS-S": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
@@ -156,7 +156,8 @@
             "6hr": "6 hourly output, averaged over interval",
             "6hrPt": "6 hourly output, at specified time point within the time period",
             "6hrZ": "6 hourly zonal mean output, averaged over interval",
-            "6hrPtZ": "6 hourly zonal mean output, at specified time point within the time period"
+            "6hrPtZ": "6 hourly zonal mean output, at specified time point within the time period",
+            "6hrRef": "6 hourly reference data for nudged forecasts"
         },
         "grid_label": {
             "gm": "global mean data",
@@ -196,7 +197,8 @@
             "6hr",
             "6hrPt",
             "6hrZ",
-            "6hrPtZ"
+            "6hrPtZ",
+            "6hrRef"
         ],
         "license": [
             "^SNAPSI model data produced by .* is licensed under a Creative Commons Attribution.*ShareAlike 4.0 International License .https://creativecommons.org/licenses.* *Consult _ for terms of use governing SNAPSI output, including citation requirements and proper acknowledgment\\. *The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. *All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
@@ -210,7 +212,8 @@
             "s20181213": "Forecasts initialized on or near 2018-12-13",
             "s20190108": "Forecasts initialized on or near 2019-01-08",
             "s20190829": "Forecasts initialized on or near 2019-08-29",
-            "s20191001": "Forecasts initialized on or near 2019-10-01"
+            "s20191001": "Forecasts initialized on or near 2019-10-01",
+            "sref": "Reference state"
         },
         "experiment_id": {
             "free": {
@@ -237,7 +240,7 @@
                 "experiment_id": "nudged",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
                 ]
             },
             "nudged-full": {
@@ -246,7 +249,7 @@
                 "experiment_id": "nudged-full",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
                 ]
             }
         },
@@ -278,7 +281,10 @@
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
         ],
         "filename_template": [
-            "<variable_id>_<table_id>_<source_id>_<experiment_id >_<subexperiment_id>-<variant_label>_<grid_label>[_<time_range>].nc"
+            "<variable_id>_<table_id>_<source_id>_<experiment_id>_<subexperiment_id>-<variant_label>_<grid_label>[_<time_range>].nc"
+        ],
+        "path_template": [
+            "<mip_era>/<activity_id>/<institution_id>/<source_id>/<experiment_id>/<subexperiment_id>/<table_id>/<variable_id>/"
         ]
     }
 }
