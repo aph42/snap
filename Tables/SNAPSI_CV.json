@@ -25,8 +25,8 @@
             "variant_label"
         ],
         "version_metadata": {
-            "CV_collection_modified": "August 23, 2021",
-            "CV_collection_version": "0.9.1",
+            "CV_collection_modified": "August 25, 2021",
+            "CV_collection_version": "0.9.2",
             "author": "Peter Hitchcock <aph28@cornell.edu>"
         },
         "activity_id": {
@@ -157,7 +157,7 @@
             "6hrPt": "6 hourly output, at specified time point within the time period",
             "6hrZ": "6 hourly zonal mean output, averaged over interval",
             "6hrPtZ": "6 hourly zonal mean output, at specified time point within the time period",
-            "6hrRef": "6 hourly reference data for nudged forecasts"
+            "6hrC": "6 hourly climatological reference data for nudged forecasts"
         },
         "grid_label": {
             "gm": "global mean data",
@@ -231,7 +231,16 @@
                 "experiment_id": "control",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                ]
+            },
+            "control-full": {
+                "activity_id": "SNAPSI",
+                "experiment": "Ensemble forecast with stratosphere nudged to climatology",
+                "experiment_id": "control-full",
+                "parent_experiment_id": "no parent",
+                "sub_experiment_id": [
+                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
                 ]
             },
             "nudged": {
@@ -240,7 +249,7 @@
                 "experiment_id": "nudged",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
+                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
                 ]
             },
             "nudged-full": {
@@ -249,7 +258,7 @@
                 "experiment_id": "nudged-full",
                 "parent_experiment_id": "no parent",
                 "sub_experiment_id": [
-                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
+                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
                 ]
             }
         },
@@ -257,7 +266,7 @@
             "model-output"
         ],
         "tracking_id": [
-            "hdl:21.14100/.*"
+            "<uuid>"
         ],
         "realization_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
