@@ -1,17 +1,17 @@
 {
     "Header": {
-        "data_specs_version": "01.00.00",
+        "data_specs_version": "0.9.2",
         "cmor_version": "3.5",
-        "table_id": "Table 6hrPtZ",
+        "table_id": "6hrPtZ",
         "realm": "atmos",
-        "table_date": "January 15, 2021",
+        "table_date": "August 25, 2021",
         "missing_value": "1e20",
         "int_missing_value": "-999",
         "product": "model-output",
         "approx_interval": "1.00000",
         "generic_levels": "",
         "mip_era": "CMIP6",
-        "Conventions": "CF-1.7"
+        "Conventions": "CF-1.8 SNAP"
     },
     "variable_entry": {
         "o3": {
