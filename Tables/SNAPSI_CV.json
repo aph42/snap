@@ -44,7 +44,8 @@
             "NCAR": "National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA",
             "NRL": "Naval Research Laboratory, Washington DC, USA",
             "UKMO": "Met Office, Exeter, UK",
-            "SNAP": "Stratospheric Network for the Assessment of Predictability"
+            "SNAP": "Stratospheric Network for the Assessment of Predictability",
+            "SNU": "Seoul National University"
         },
         "source_id": {
             "SNAPSI-REF": {
@@ -130,13 +131,20 @@
                 "institution_id": "NRL",
                 "source_id": "NAVGEM",
                 "source": "NAVGEM (description)"
-            },        
+            },
             "GloSea5": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
                 "institution_id": "UKMO",
                 "source_id": "GloSea5",
                 "source": "GloSea5 (description)"
+            },
+            "GRIMs": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "SNU",
+                "source_id": "GRIMs",
+                "source": "GRIMs (description)"
             }
         },
         "source_type": {
