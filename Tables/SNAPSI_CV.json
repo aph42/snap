@@ -104,12 +104,12 @@
                 "source_id": "GloSea5-GC2",
                 "source": "GloSea5-GC2 (description)"
             },
-            "CNRM-CM 6.1": {
+            "CNRM-CM-61": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
                 "institution_id": "Meteo-France",
-                "source_id": "CNRM-CM 6.1",
-                "source": "CNRM-CM 6.1 (description)"
+                "source_id": "CNRM-CM-61",
+                "source": "CNRM-CM-61 (description)"
             },
             "SPEAR": {
                 "activity_participation": "SNAPSI",
