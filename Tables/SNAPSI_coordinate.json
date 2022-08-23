@@ -637,7 +637,31 @@
                "3.8841625",
                "2.551303",
                "1.5002737"
-            ], 
+            ]
+        },
+	"sdepth1": {
+                "standard_name": "depth",
+                "units": "m",
+                "axis": "Z",
+                "long_name": "depth",
+                "climatology": "",
+                "formula": "",
+                "must_have_bounds": "yes",
+                "out_name": "depth",
+                "positive": "down",
+                "requested": "",
+                "requested_bounds": "",
+                "stored_direction": "increasing",
+                "tolerance": "",
+                "type": "double",
+                "valid_max": "0.1",
+                "valid_min": "0.0",
+                "value": "0.05",
+                "z_bounds_factors": "",
+                "z_factors": "",
+                "bounds_values": "0.0 0.1",
+                "generic_level_name": ""
+        }, 
         "standard_hybrid_sigma": {
             "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate", 
             "units": "1", 

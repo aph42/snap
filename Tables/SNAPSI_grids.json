@@ -1,12 +1,12 @@
 {
     "Header": {
-        "data_specs_version": "01.00.00", 
+        "data_specs_version": "0.9.3", 
         "table_id": "Table grids", 
         "cmor_version": "3.5", 
-        "table_date": "18 November 2020", 
+        "table_date": "August 23, 2022", 
         "missing_value": "1e20", 
         "product": "output", 
-        "Conventions": "CF-1.7 CMIP-6.2"
+        "Conventions": "CF-1.8 SNAP"
     }, 
     "mapping_entry": {
         "sample_user_mapping": {
