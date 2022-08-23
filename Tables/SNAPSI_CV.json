@@ -279,7 +279,7 @@
             "model-output"
         ],
         "tracking_id": [
-            ".*"
+            "SNAPSI/.*"
         ],
         "realization_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"
