@@ -25,7 +25,7 @@
             "variant_label"
         ],
         "version_metadata": {
-            "CV_collection_modified": "August 23, 2022",
+            "CV_collection_modified": "September 14, 2022",
             "CV_collection_version": "0.9.3",
             "author": "Peter Hitchcock <aph28@cornell.edu>"
         },
@@ -104,12 +104,12 @@
                 "source_id": "GloSea5-GC2",
                 "source": "GloSea5-GC2 (description)"
             },
-            "CNRM-CM-61": {
+            "CNRM-CM61": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
                 "institution_id": "Meteo-France",
-                "source_id": "CNRM-CM-61",
-                "source": "CNRM-CM-61 (description)"
+                "source_id": "CNRM-CM61",
+                "source": "CNRM-CM61 (description)"
             },
             "SPEAR": {
                 "activity_participation": "SNAPSI",
@@ -212,7 +212,7 @@
             "^SNAPSI model data produced by .* is licensed under a Creative Commons Attribution ShareAlike 4.0 International License https://creativecommons.org/licenses Consult _ for terms of use governing SNAPSI output, including citation requirements and proper acknowledgment\\. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose\\. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law\\.$"
         ],
         "mip_era": [
-            "SNAPSI"
+            "CMIP6"
         ],
         "sub_experiment_id": {
             "s20180125": "Forecasts initialized on or near 2018-01-25",
@@ -226,7 +226,7 @@
         "experiment_id": {
             "free": {
                 "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AER"],
+                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
                 "experiment": "Free-running ensemble forecast",
                 "experiment_id": "free",
                 "parent_experiment_id": ["no parent"],
@@ -236,7 +236,7 @@
             },
             "control": {
                 "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AER"],
+                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
                 "experiment": "Ensemble forecast with zonally symmetric component of stratosphere nudged to climatology",
                 "experiment_id": "control",
                 "parent_experiment_id": ["no parent"],
@@ -246,7 +246,7 @@
             },
             "control-full": {
                 "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AER"],
+                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
                 "experiment": "Ensemble forecast with stratosphere nudged to climatology",
                 "experiment_id": "control-full",
                 "parent_experiment_id": ["no parent"],
@@ -256,7 +256,7 @@
             },
             "nudged": {
                 "activity_id": ["SNAPSI"],
-		"additional_allowed_model_components": ["AOGCM", "AER"],
+                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
                 "experiment": "Ensemble forecast with zonally symmetric component of stratosphere nudged to reanalyzed evolution",
                 "experiment_id": "nudged",
                 "parent_experiment_id": ["no parent"],
@@ -266,7 +266,7 @@
             },
             "nudged-full": {
                 "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AER"],
+                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
                 "experiment": "Ensemble forecast with stratosphere nudged to reanalyzed evolution",
                 "experiment_id": "nudged-full",
                 "parent_experiment_id": ["no parent"],
@@ -279,7 +279,7 @@
             "model-output"
         ],
         "tracking_id": [
-            "SNAPSI/.*"
+            "hdl:21.14100/.*"
         ],
         "realization_index": [
             "^\\[\\{0,\\}[[:digit:]]\\{1,\\}\\]\\{0,\\}$"

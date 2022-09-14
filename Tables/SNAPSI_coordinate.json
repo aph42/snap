@@ -638,6 +638,17 @@
                "2.551303",
                "1.5002737"
             ]
+            "requested_bounds": "", 
+            "stored_direction": "decreasing", 
+            "tolerance": "", 
+            "type": "double", 
+            "valid_max": "", 
+            "valid_min": "", 
+            "value": "", 
+            "z_bounds_factors": "", 
+            "z_factors": "", 
+            "bounds_values": "", 
+            "generic_level_name": ""
         },
 	"sdepth1": {
                 "standard_name": "depth",
