@@ -637,7 +637,7 @@
                "3.8841625",
                "2.551303",
                "1.5002737"
-            ]
+            ],
             "requested_bounds": "", 
             "stored_direction": "decreasing", 
             "tolerance": "", 
@@ -650,7 +650,7 @@
             "bounds_values": "", 
             "generic_level_name": ""
         },
-	"sdepth1": {
+        "sdepth1": {
                 "standard_name": "depth",
                 "units": "m",
                 "axis": "Z",

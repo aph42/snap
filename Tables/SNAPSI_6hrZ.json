@@ -4,13 +4,13 @@
         "cmor_version": "3.5",
         "table_id": "Table 6hrZ",
         "realm": "atmos",
-        "table_date": "August 23, 2022",
+        "table_date": "September 14, 2022",
         "missing_value": "1e20",
         "int_missing_value": "-999",
         "product": "model-output",
         "approx_interval": "1.00000",
         "generic_levels": "",
-        "mip_era": "SNAPSI",
+        "mip_era": "CMIP6",
         "Conventions": "CF-1.8 SNAP"
     },
     "variable_entry": {
