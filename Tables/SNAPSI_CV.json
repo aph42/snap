@@ -82,7 +82,7 @@
                 "institution_id": "ECCC",
                 "source_id": "CanESM5",
                 "source": "CanESM5 (description)"
-            },  
+            },
             "GEM-NEMO": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
@@ -198,7 +198,7 @@
         "realm": {
             "atmos": "Atmosphere",
             "seaIce": "Sea Ice",
-            "ocean":"Ocean",
+            "ocean": "Ocean",
             "land": "Land Surface"
         },
         "table_id": [
@@ -225,53 +225,134 @@
         },
         "experiment_id": {
             "free": {
-                "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
+                "activity_id": [
+                    "SNAPSI"
+                ],
+                "additional_allowed_model_components": [
+                    "AOGCM",
+                    "AGCM",
+                    "AER",
+                    "BGC",
+                    "CHEM"
+                ],
                 "experiment": "Free-running ensemble forecast",
                 "experiment_id": "free",
-                "parent_experiment_id": ["no parent"],
+                "parent_experiment_id": [
+                    "no parent"
+                ],
                 "sub_experiment_id": [
-                    "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                    "s20180125",
+                    "s20180208",
+                    "s20181213",
+                    "s20190108",
+                    "s20190829",
+                    "s20191001"
                 ]
             },
             "control": {
-                "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
+                "activity_id": [
+                    "SNAPSI"
+                ],
+                "additional_allowed_model_components": [
+                    "AOGCM",
+                    "AGCM",
+                    "AER",
+                    "BGC",
+                    "CHEM"
+                ],
                 "experiment": "Ensemble forecast with zonally symmetric component of stratosphere nudged to climatology",
                 "experiment_id": "control",
-                "parent_experiment_id": ["no parent"],
+                "parent_experiment_id": [
+                    "no parent"
+                ],
                 "sub_experiment_id": [
-                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                    "sref",
+                    "s20180125",
+                    "s20180208",
+                    "s20181213",
+                    "s20190108",
+                    "s20190829",
+                    "s20191001"
                 ]
             },
             "control-full": {
-                "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
+                "activity_id": [
+                    "SNAPSI"
+                ],
+                "additional_allowed_model_components": [
+                    "AOGCM",
+                    "AGCM",
+                    "AER",
+                    "BGC",
+                    "CHEM"
+                ],
                 "experiment": "Ensemble forecast with stratosphere nudged to climatology",
                 "experiment_id": "control-full",
-                "parent_experiment_id": ["no parent"],
+                "parent_experiment_id": [
+                    "no parent"
+                ],
                 "sub_experiment_id": [
-                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001"
+                    "sref",
+                    "s20180125",
+                    "s20180208",
+                    "s20181213",
+                    "s20190108",
+                    "s20190829",
+                    "s20191001"
                 ]
             },
             "nudged": {
-                "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
+                "activity_id": [
+                    "SNAPSI"
+                ],
+                "additional_allowed_model_components": [
+                    "AOGCM",
+                    "AGCM",
+                    "AER",
+                    "BGC",
+                    "CHEM"
+                ],
                 "experiment": "Ensemble forecast with zonally symmetric component of stratosphere nudged to reanalyzed evolution",
                 "experiment_id": "nudged",
-                "parent_experiment_id": ["no parent"],
+                "parent_experiment_id": [
+                    "no parent"
+                ],
                 "sub_experiment_id": [
-                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
+                    "sref",
+                    "s20180125",
+                    "s20180208",
+                    "s20181213",
+                    "s20190108",
+                    "s20190829",
+                    "s20191001",
+                    "sref"
                 ]
             },
             "nudged-full": {
-                "activity_id": ["SNAPSI"],
-                "additional_allowed_model_components": ["AOGCM", "AGCM", "AER", "BGC", "CHEM"],
+                "activity_id": [
+                    "SNAPSI"
+                ],
+                "additional_allowed_model_components": [
+                    "AOGCM",
+                    "AGCM",
+                    "AER",
+                    "BGC",
+                    "CHEM"
+                ],
                 "experiment": "Ensemble forecast with stratosphere nudged to reanalyzed evolution",
                 "experiment_id": "nudged-full",
-                "parent_experiment_id": ["no parent"],
+                "parent_experiment_id": [
+                    "no parent"
+                ],
                 "sub_experiment_id": [
-                    "sref", "s20180125", "s20180208", "s20181213", "s20190108", "s20190829", "s20191001", "sref"
+                    "sref",
+                    "s20180125",
+                    "s20180208",
+                    "s20181213",
+                    "s20190108",
+                    "s20190829",
+                    "s20191001",
+                    "sref"
                 ]
             }
         },
