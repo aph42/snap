@@ -1,10 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "0.9.3",
+        "data_specs_version": "0.9.4",
         "cmor_version": "3.5",
         "table_id": "Table 6hrPtZ",
         "realm": "atmos",
-        "table_date": "September 14, 2022",
+        "table_date": "September 19, 2022",
         "missing_value": "1e20",
         "int_missing_value": "-999",
         "product": "model-output",

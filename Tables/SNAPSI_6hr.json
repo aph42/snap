@@ -1,10 +1,10 @@
 {
     "Header": {
-        "data_specs_version": "0.9.3",
+        "data_specs_version": "0.9.4",
         "cmor_version": "3.5",
         "table_id": "Table 6hr",
         "realm": "atmos",
-        "table_date": "September 14, 2022",
+        "table_date": "September 19, 2022",
         "missing_value": "1e20",
         "int_missing_value": "-999",
         "product": "model-output",
@@ -141,7 +141,7 @@
             "units": "K",
             "cell_methods": "area: mean time: maximum",
             "cell_measures": "area: areacella",
-            "long_name": "a 6hourly Maximum Near-Surface Air Temperature",
+            "long_name": "6 hourly Maximum Near-Surface Air Temperature",
             "comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: maximum')",
             "dimensions": "longitude latitude time height2m",
             "out_name": "tasmax",
