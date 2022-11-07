@@ -10,7 +10,7 @@
         "product": "model-output",
         "approx_interval": "1.00000",
         "generic_levels": "",
-        "mip_era": "CMIP6",
+        "mip_era": "SNAPSI",
         "Conventions": "CF-1.8 SNAP"
     },
     "variable_entry": {
