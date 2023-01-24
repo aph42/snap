@@ -139,6 +139,13 @@
                 "source_id": "GloSea5",
                 "source": "GloSea5 (description)"
             },
+            "GloSea6": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "UKMO",
+                "source_id": "GloSea6",
+                "source": "GloSea6 (description)"
+            },
             "GRIMs": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
