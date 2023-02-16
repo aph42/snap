@@ -24,7 +24,7 @@
             "long_name": "Tendency of Air Temperature Due to Imposed Relaxation",
             "comment": "Tendency of the air temperature due to imposed relaxation.",
             "dimensions": "latitude snap34 time",
-            "out_name": "utendnd",
+            "out_name": "tndnd",
             "type": "real",
             "positive": "",
             "valid_min": "",
