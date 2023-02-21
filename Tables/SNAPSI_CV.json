@@ -104,6 +104,13 @@
                 "source_id": "GloSea5-GC2",
                 "source": "GloSea5-GC2 (description)"
             },
+            "GloSea6-GC2": {
+                "activity_participation": "SNAPSI",
+                "cohort": "Registered",
+                "institution_id": "KMA",
+                "source_id": "GloSea6-GC2",
+                "source": "GloSea6-GC2 (description)"
+            },
             "CNRM-CM61": {
                 "activity_participation": "SNAPSI",
                 "cohort": "Registered",
